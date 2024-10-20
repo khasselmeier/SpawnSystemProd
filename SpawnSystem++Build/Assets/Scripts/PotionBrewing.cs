@@ -45,7 +45,7 @@ public class PotionBrewing : MonoBehaviour
         IPotionColor color = potionFactory.CreateColor();
         IPotionIngredient potionIngredient = potionFactory.CreateIngredient();
 
-        resultText.text = $"Brewed a {color.GetColor()} {effect.GetEffect()} potion using a {potionIngredient.GetIngredient()}!";
+        resultText.text = $"Brewed a {selectedColor} {effect.GetEffect()} potion using a {potionIngredient.GetIngredient()}!";
 
         // update sprite
         UpdatePotionSprite(selectedEffect, selectedColor, selectedIngredient);
